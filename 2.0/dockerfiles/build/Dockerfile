@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python-pip \
     librabbitmq-dev \
     software-properties-common \
-    && groupadd -r -g 2000 laravel \
+    && groupadd -r -g 2000 yii \
     && useradd -u 2000 -g 2000 -m -d /home/yii -s /bin/bash yii && adduser yii sudo \
     && echo "yii ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers \
     && mkdir -p /etc/sudoers.d \
